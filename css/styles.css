@@ -54,6 +54,10 @@ main a {
     main {
         min-height: calc(100vh - 60px);
     }
+
+    main p.date {
+        font-size: 12px;
+    }
 }
 
 /* MAIN (HOME PAGE & SECOND PAGE) */
@@ -279,6 +283,13 @@ ol li a.return {
 ol li a.return:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+p.date {
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-weight: bold;
+    color: white;
 }
 
 @media (max-width: 864px) {
