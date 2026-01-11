@@ -184,6 +184,12 @@ div.arguments-page div:hover {
     transition: .6s;
 }
 
+div.arguments-page h2 {
+    color: white;
+    padding: 10px 0 10px 30px;
+    font-size: 28px;
+}
+
 @media (max-width: 864px) {
     div.arguments-page {
         max-width: 600px;
@@ -196,8 +202,19 @@ div.arguments-page div:hover {
 
 @media (max-width: 650px) {
     div.arguments-page div {
-        max-width: 500px;
+        width: 500px;
         margin: 0 auto;
+    }
+
+    div.arguments-page h2 {
+        padding-left: 85px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.arguments-page h2 {
+        font-size: 16px;
+        padding: 5px 0 5px 10%;
     }
 }
 
