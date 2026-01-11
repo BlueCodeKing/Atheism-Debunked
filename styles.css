@@ -1,0 +1,391 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, "google sans", sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    background-image: linear-gradient(dodgerblue, blue);
+    height: 76px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    line-height: 76px;
+}
+
+@media (max-width: 500px) {
+
+    header {
+        height: 60px;
+    }
+
+    header h1 a {
+        font-size: 28px;
+        line-height: 60px;
+    }
+}
+
+/* MAIN (UNIVERSAL) */
+
+main {
+    min-height: calc(100vh - 76px);
+    background-image: url("../images/background\ hex.png");
+    background-attachment: fixed;
+}
+
+main a {
+    color: white;
+}
+
+@media (max-width: 500px) {
+    main {
+        min-height: calc(100vh - 60px);
+    }
+
+    main p.date {
+        font-size: 12px;
+    }
+}
+
+/* MAIN (HOME PAGE & SECOND PAGE) */
+
+div.home-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+div.home-page div {
+    background-color: blue;
+    border: solid 10px darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: .8s;
+}
+
+div.home-page div:hover {
+    border-color: white;
+    cursor: pointer;
+    transition: .6s;
+}
+
+div.home-page div a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 30px;
+    min-width: 100%;
+}
+
+div.home-page p.top-paragraph {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div.home-page p.bottom-paragraph {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 864px) {
+    div.home-page {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 630px) {
+    div.home-page {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 530px) {
+    div.home-page {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    div.home-page div a {
+        padding: 10px;
+    }
+
+    div.home-page p.top-paragraph {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    div.home-page p.bottom-paragraph {
+        font-size: 16px;
+    }
+
+}
+
+/* MAIN (THIRD PAGE) */
+
+div.arguments-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+div.arguments-page div {
+    background-color: blue;
+    border: solid 10px darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: .8s;
+}
+
+div.arguments-page div a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+div.arguments-page div a p {
+    padding: 25px;
+}
+
+div.arguments-page div:hover {
+    border-color: white;
+    cursor: pointer;
+    transition: .6s;
+}
+
+div.arguments-page h2 {
+    color: white;
+    padding: 10px 0 10px 30px;
+    font-size: 28px;
+}
+
+@media (max-width: 864px) {
+    div.arguments-page {
+        max-width: 600px;
+    }
+
+    div.arguments-page div a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 650px) {
+    div.arguments-page div {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    div.arguments-page h2 {
+        padding-left: 85px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.arguments-page h2 {
+        font-size: 16px;
+        padding: 5px 0 5px 10%;
+    }
+}
+
+@media (max-width: 550px) {
+    div.arguments-page {
+        max-width: 100%;
+    }
+
+    div.arguments-page div {
+        width: 90%;
+    }
+
+    div.arguments-page div a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    div.arguments-page div a p {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* MAIN (FOURTH PAGE) */
+
+div.content-page {
+    padding: 40px 0;
+}
+
+div.content-page div.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: blue;
+    border: solid 10px darkblue;
+    border-radius: 10px;
+}
+
+div.content-page div.content h1 {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-color: darkblue;
+    margin-bottom: 20px;
+}
+
+div.content-page div.content h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+div.content-page div.content h2 {
+    color: white;
+    font-size: 28px;
+    padding: 20px 25px 20px 30px;
+    background-color: darkblue;
+    border-radius: 0 30px 30px 0;
+    width: fit-content;
+    margin: 0;
+}
+
+div.content-page div.content p {
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    line-height: 1.6;
+}
+
+ol li {
+    color: white;
+    font-size: 20px;
+    list-style-position: inside;
+    margin: 25px;
+}
+
+ol li a {
+    color: white;
+}
+
+ol li a.return {
+    text-decoration: none;;
+}
+
+ol li a.return:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p.date {
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 864px) {
+    div.content-page div.content {
+        max-width: 600px;
+    }
+
+    div.content-page div.content h2 {
+        font-size: 24px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    ol.sources-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    div.content h1 {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    div.content-page {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    div.content-page {
+        max-width: 95%;
+        padding-top: 20px;
+    }
+
+    div.content-page div.content {
+        max-width: 100%;
+        border-width: 5px;
+    }
+
+    div.content-page div.content h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    div.content-page div.content h2 {
+        font-size: 20px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    div.content-page div.content p {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    ol li {
+        font-size: 16px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    div.content-page div.content ol li {
+        font-size: 14px;
+    }
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: solid 5px white;
+}
